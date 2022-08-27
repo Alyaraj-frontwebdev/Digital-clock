@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+.container{
+    margin:auto;
+    width:350px;
+    margin-top: 150px;
+    height: 350px;
+    border-radius: 50%;
+    animation: 5s myAnimation infinite;
+}
+@keyframes myAnimation {
+    0%{
+        box-shadow: 0 0 50px 30px rgb(3, 3, 51);
+    }
+    100%{
+        box-shadow: 0 0 50px 30px rgb(8, 8, 252);
+    }
+}
+#currentTime{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'digital-clock-font';
+    transform: translateY(100px);
+    color:rgb(244, 244, 9);
+}
+#currentDate{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'digital-clock-font';
+    transform: translateY(100px);
+    color:rgb(244, 244, 9);
+}
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('C:/Users/alyap/Documents/Web/digital-7 (italic).ttf');
+}
